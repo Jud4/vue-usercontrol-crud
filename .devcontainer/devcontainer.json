@@ -19,7 +19,9 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"vue.volar"
+				"vue.volar",
+				"sdras.vue-vscode-snippets",
+				"vuetifyjs.vuetify-vscode"
 			]
 		  }
 	}
