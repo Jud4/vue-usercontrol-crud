@@ -13,7 +13,6 @@ export default {
     getUsers() {
       axios.get('http://localhost:8082/v1/users?detailed=true').then(res=>{
         this.users = res.data;
-        console.log(this.users);
       }).catch (() => {
         //TODO Handle error
       })
@@ -29,5 +28,8 @@ export default {
 </script>
 
 <template>
-    <TableUsers :items="users"/>
+    <TableUsers 
+    :items="users"
+    :refreshTable="getUsers"
+    />
 </template>
